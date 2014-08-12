@@ -3,7 +3,7 @@ var Wombat = function()
 	var thisWombat = 
 	{
 		level: new Level()
-		,image: "/html/wombat_right.png"
+		,image: "/wombat_right.png"
 		,clock: 0
 		,maxJumpHeight: 55
 		,moveSpeed: 4
@@ -104,14 +104,14 @@ var Level = function()
 }
 var wombatImage = new Image();
 var backgroundImage = new Image();
-backgroundImage.src = "/html/bg.png";
+backgroundImage.src = "/bg.png";
 function RenderFrame(wombat)
 {
 	wombat.clock += 1;
 	var canvas = $("canvas").get(0);
 	var context = canvas.getContext('2d');
 	canvas.width = canvas.width;
-	var imgSrc = "/html/wombat_";
+	var imgSrc = "/wombat_";
 	imgSrc += wombat.state.facingDirection;
 	imgSrc += (wombat.state.napping || new Date() - wombat.state.lastMoved > 5000) ? "_napping" : "";
 	imgSrc += ".png";
@@ -163,7 +163,7 @@ $(document).ready(function()
 	for(var i = 0; i < preloads.length; i++)
 	{
 		var img = new Image();
-		img.src = "/html/" + preloads[i];
+		img.src = "/" + preloads[i];
 		$("body").append($(img).css("display", "none"));
 	}
 
