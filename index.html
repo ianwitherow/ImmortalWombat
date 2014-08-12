@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Immortal Wombat</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<script type="text/javascript" src="/html/jquery.js"></script>
+		<script type="text/javascript" src="/html/wombat.js"></script>
+		<style type="text/css">
+			*
+			{
+				margin:0 auto;
+			}
+			body
+			{
+				background-color: #666;
+			}
+			.title
+			{
+				font-size:24px;
+				font-family:impact;
+				color: #ccc;
+				margin:25px;
+
+			}
+			.controlsDiv h1
+			{
+				font-size:16px;
+				font-family:arial;
+				font-weight:normal;
+				margin-bottom:15px;
+			}
+			.controlsDiv
+			{
+				margin:15px;
+				color: #bbb;
+			}
+			.controls
+			{
+				list-style-type:none;
+				margin:0;
+				padding:0;
+				width:190px;
+				text-align: left;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			.controls li .control
+			{
+				font-family:consolas;
+				display:block;
+				float:left;
+				width:120px;
+				font-weight:700;
+				text-align:right;
+				margin-right:15px;
+			}
+			.controls li .controlDescription
+			{
+				font-family:arial;
+				font-size:smaller;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="text-align:center;">
+			<div class="title">
+				Immortal &nbsp;&nbsp; Wombat
+			</div>
+			<canvas id="Game" width="500" height="200" style="	border:1px solid #aaa;margin-left:auto;margin-right:auto;">
+				
+			</canvas>
+
+			<div style="text-align:center;" class="controlsDiv">
+				<h1>
+					Controls
+				</h1>
+				<ul class="controls">
+					<li><span class="control">A</span><span class="controlDescription">Left</span></li>
+					<li><span class="control">D</span><span class="controlDescription">Right</span></li>
+					<li><span class="control">Space</span><span class="controlDescription">Jump</span></li>
+					<li><span class="control">Anything Else</span><span class="controlDescription">Nap</span></li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+</html>
